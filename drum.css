@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,900&display=swap');
+
+:root {
+  --color1: #0c6;
+  --color2: #ff0;
+}
+
+body {
+  background-color: var(--color1);
+}
+
+header h1 {
+  font-family: cursive;
+  font-style: oblique;
+  font-size: 62px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--color2);
+  text-decoration:underline;
+  text-decoration-color: #fff;
+  text-decoration-style:wavy;
+  text-underline-offset: 4px;
+}
+
+main {
+  display: flexbox;
+  justify-content: center;
+  text-align: center;
+  margin-top: 96px;
+}
+
+button {
+  display: inline-block;
+  margin: 12px;
+  padding: 44px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 72px;
+  font-weight: 900;
+  font-family: 'Source Code Pro', monospace;
+  cursor: pointer;
+  transition: 0.5s;
+  color: blueviolet;
+  box-shadow: 4px 8px 4px rgb(151, 215, 223);
+  border-width: 4px;
+  border-color: powderblue;
+  border-style: solid;
+}
+
+ button.w {
+  background: url(background/tom1.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode:overlay;
+  /* background-position: center; */
+}
+
+button.a {
+  background: url(background/tom2.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+button.s {
+  background: url(background/tom3.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+button.d {
+  background: url(background/tom3.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+button.j {
+  background: url(background/snare.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+button.k {
+  background: url(background/crash.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+button.l {
+  background: url(background/kick.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+button:hover {
+  color: rgb(233, 17, 125);
+  padding: 32px;
+  font-size: 84px;
+}
+
+.footnote {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(3, 50, 25, 0.4);
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media(max-width: 777px){
+  header h1 {
+    font-size: 40px;
+  }
+  main {
+    margin-top: 52px;
+  }
+  button {
+    margin: 8px;
+    padding: 32px;
+    font-size: 28px;
+  }
+  button:hover {
+    padding: 20px;
+    font-size: 36px;
+  }
+}
